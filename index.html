@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    	<link rel="manifest" href="manifest.json">
+
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="application-name" content="COTD">
+<meta name="apple-mobile-web-app-title" content="COTD">
+<meta name="theme-color" content="#beff00">
+<meta name="msapplication-navbutton-color" content="#beff00">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="msapplication-starturl" content="index.html">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<link rel="icon" type="image/png" sizes="48x48" href="i48.png">
+<link rel="apple-touch-icon" type="image/png" sizes="48x48" href="i48.png">
+<link rel="icon" type="image/png" sizes="72x72" href="i72.png">
+<link rel="apple-touch-icon" type="image/png" sizes="72x72" href="i72.png">
+<link rel="icon" type="image/png" sizes="96x96" href="i96.png">
+<link rel="apple-touch-icon" type="image/png" sizes="96x96" href="i96.png">
+<link rel="icon" type="image/png" sizes="144x144" href="i144.png">
+<link rel="apple-touch-icon" type="image/png" sizes="144x144" href="i144.png">
+<link rel="icon" type="image/png" sizes="192x192" href="i192.png">
+<link rel="apple-touch-icon" type="image/png" sizes="192x192" href="i192.png">
+<link rel="icon" type="image/png" sizes="256x256" href="i256.png">
+<link rel="apple-touch-icon" type="image/png" sizes="256x256" href="i256.png">
+<link rel="icon" type="image/png" sizes="512x512" href="i512.png">
+<link rel="apple-touch-icon" type="image/png" sizes="512x512" href="i512.png">
+        <title>Color-Of-The-Moment</title>
+        <link rel="stylesheet" type="text/css" href="style.css"></link>
+    </head>
+    <body>
+        <p id="txt"></p>
+        <script src="app.js"></script>
+        <script>
+    var __USE_CACHE = false;
+    if ( __USE_CACHE && 'serviceWorker' in navigator ) {
+      navigator.serviceWorker.register( 'sw.js' )
+        .then( function ( registration ) {
+          console.log( 'Registration succeeded. Scope is ' + registration.scope );
+        }, function ( ex ) {
+          console.log( 'Registration failed with ' + ex );
+        } );
+    }
+  </script>
+    </body>
+</html>
