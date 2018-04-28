@@ -34,15 +34,17 @@
         <p id="txt"></p>
         <script src="app.js"></script>
         <script>
-    var __USE_CACHE = false;
-    if ( __USE_CACHE && 'serviceWorker' in navigator ) {
-      navigator.serviceWorker.register( 'service-worker.js' )
-        .then( function ( registration ) {
-          console.log( 'Registration succeeded. Scope is ' + registration.scope );
-        }, function ( ex ) {
-          console.log( 'Registration failed with ' + ex );
-        } );
-    }
-  </script>
+		if ('serviceWorker' in navigator) {
+  window.addEventListener('load', function() {
+    navigator.serviceWorker.register('service-worker.js').then(function(registration) {
+      // Registration was successful
+      console.log('ServiceWorker registration successful with scope: ', registration.scope);
+    }, function(err) {
+      // registration failed :(
+      console.log('ServiceWorker registration failed: ', err);
+    });
+  });
+}
+</script>
     </body>
 </html>
