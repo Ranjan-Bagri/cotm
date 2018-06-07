@@ -1,4 +1,3 @@
-
 var cache_name = 'v1';
 
 var paths = [
