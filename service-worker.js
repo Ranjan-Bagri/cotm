@@ -5,13 +5,13 @@ var paths = [
   'style.css',
   'app.js',
   'manifest.json',
-  'i48.png',
-  'i72.png',
-  'i96.png',
-  'i144.png',
-  'i192.png',
-  'i256.png',
-  'i512.png'
+  'images/i48.png',
+  'images/i72.png',
+  'images/i96.png',
+  'images/i144.png',
+  'images/i192.png',
+  'images/i256.png',
+  'images/i512.png'
 ];
 
 self.addEventListener( 'install', function ( event ) {
